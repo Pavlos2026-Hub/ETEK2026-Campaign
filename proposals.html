@@ -538,8 +538,7 @@ document.querySelectorAll('.comment-form').forEach(form => {
     status.textContent = 'Η υποβολή σας αποστέλλεται. Το σχόλιο θα παραμείνει σε αναμονή μέχρι να ελεγχθεί.';
     form.querySelector('button[type="submit"]').disabled = true;
     setTimeout(() => { form.querySelector('button[type="submit"]').disabled = false; }, 2500);
-    form.reset();
-  });
+      });
 });
 // The submission forms use a standard URL-encoded POST to the Apps Script endpoint.
 // Public display of approved comments will be enabled after the endpoint is adapted for JSONP
